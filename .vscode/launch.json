@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-LaptopsApplication<laptops>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.nadhem.laptops.LaptopsApplication",
+            "projectName": "laptops",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61654 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=laptops"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Oauth2GithubApplication<oauth2_GITHUB>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.demo.Oauth2GithubApplication",
+            "projectName": "oauth2_GITHUB",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

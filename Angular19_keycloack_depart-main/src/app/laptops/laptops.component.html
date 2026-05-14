@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+               <table class="table table-striped">
+                 <thead>
+                    <tr>
+                        <th colspan="5">Liste des Laptops</th>
+                    </tr>
+                    <tr>
+                        <th>Id</th>
+                        <th>Brand</th>
+                        <th>Prix</th>
+                        <th>Date Création</th>
+                        <th>Modèle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (laptop of laptops; track laptop) {
+                    <tr>
+                        <td>{{laptop.idLaptop}}</td>
+                        <td>{{laptop.brandLaptop}}</td>
+                        <td>{{laptop.prixLaptop}}</td>
+                        <td>{{laptop.dateCreation | date:'dd/MM/yyyy'}}</td>
+                        <td>{{laptop.model?.nomModel}}</td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
